@@ -1,0 +1,7 @@
+Syntax for Mysql
+
+> Syntax for Databases
+1. CREATE DATABASE {database_name};
+2. USE {database_name};
+3. SHOW DATABASES;
+4. DROP DATABASE {database_name};
