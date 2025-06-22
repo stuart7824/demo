@@ -1,10 +1,11 @@
 Syntax for Mysql
 
-> Syntax for Databases
-1. CREATE DATABASE {database_name};
-2. USE {database_name};
-3. SHOW DATABASES;
-4. DROP DATABASE {database_name};
-5. SELECT DATABASE();
-6. RENAME DATABASE {old_name} TO {new_name}
+> Syntax for Databases:-
+1. CREATE DATABASE {database_name};          
+2. USE {database_name};                      # selects a database for use
+3. SHOW DATABASES;                           # shows all the databases created on the workbench
+4. DROP DATABASE {database_name};            
+5. SELECT DATABASE();                        # shows the current database in use
+6. RENAME DATABASE {old_name} TO {new_name}  
 
+> Syntax for Tables:-
