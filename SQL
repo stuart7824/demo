@@ -5,3 +5,6 @@ Syntax for Mysql
 2. USE {database_name};
 3. SHOW DATABASES;
 4. DROP DATABASE {database_name};
+5. SELECT DATABASE();
+6. RENAME DATABASE {old_name} TO {new_name}
+
