@@ -29,7 +29,7 @@ C> Syntax for Columns:-
 2. ALTER TABLE {table_name} 
    DROP COLUMN {column_name};
 3. ALTER TABLE {table_name} 
-   MODIFY COLUMN {column_name} {datatype};
+   MODIFY {column_name} {datatype};
 4. ALTER TABLE {table_name} 
    RENAME COLUMN {old_name} TO {new_name};
 5. ALTER TABLE {table_name}
@@ -38,3 +38,8 @@ C> Syntax for Columns:-
 6. ALTER TABLE {table_name}
    MODIFY {column_name} {datatype}
    FIRST;
+
+D> Datatypes in MySQL:-
+Broadly speaking there are 3, string, numeric and data & time  
+
+
