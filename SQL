@@ -1,12 +1,40 @@
 Syntax for Mysql
 
-> Syntax for Databases:-
+A> Syntax for Databases:-
 1. CREATE DATABASE {database_name};          
 2. USE {database_name};                      # selects a database for use
 3. SHOW DATABASES;                           # shows all the databases created on the workbench
 4. DROP DATABASE {database_name};            
 5. SELECT DATABASE();                        # shows the current database in use
-6. RENAME DATABASE {old_name} TO {new_name}
-7. ALTER DATABASE {database_name} READ ONLY = 0/1  # 0=OFF, 1=ON
+6. RENAME DATABASE {old_name} TO {new_name};
+7. ALTER DATABASE {database_name} READ ONLY = 0/1;  # 0=OFF, 1=ON
+8. SHOW TABLES IN {database_name};           # shows all the names of the tables in that database
+9. SHOW TABLES                               # shows all the tables in the current database
 
-> Syntax for Tables:-
+B> Syntax for Tables:-
+1. CREATE TABLE {table_name} (
+  {column_name1} {datatype},
+  {column_name2} {datatype},
+  ...... );
+2. RENAME TABLE {old_name} TO {new_name};
+3. DROP TABLE {table_name};
+4. TRUNCATE TABLE {table_name};
+5. DELETE FROM TABLE {table_name};
+6. SHOW TABLE STATUS;
+7. DESCRIBE {table_name};
+
+C> Syntax for Columns:-
+1. ALTER TABLE {table_name} 
+   ADD {column_name} {datatype};
+2. ALTER TABLE {table_name} 
+   DROP COLUMN {column_name};
+3. ALTER TABLE {table_name} 
+   MODIFY COLUMN {column_name} {datatype};
+4. ALTER TABLE {table_name} 
+   RENAME COLUMN {old_name} TO {new_name};
+5. ALTER TABLE {table_name}
+   MODIFY {column_name} {datatype}
+   AFTER {column_name};
+6. ALTER TABLE {table_name}
+   MODIFY {column_name} {datatype}
+   FIRST;
