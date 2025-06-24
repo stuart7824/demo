@@ -1,0 +1,7 @@
+
+MySQL SQL syntax:-
+
+--> Select syntax:-
+1. SELECT {column_name}, {column_name}, .... FROM {table_name};
+2. SELECT * FROM {table_name};
+
