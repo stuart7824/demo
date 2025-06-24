@@ -1,4 +1,5 @@
-Syntax for Mysql
+
+<h1> Syntax for Mysql <h1>
 
 A> Syntax for Databases:-
 1. CREATE DATABASE {database_name};          
@@ -56,4 +57,11 @@ FOREIGN KEY - Prevents actions that would destroy links between tables
 CHECK - Ensures that the values in a column satisfies a specific condition
 DEFAULT - Sets a default value for a column if no value is specified
 CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+F> Inserting data into tables:-
+1. INSERT INTO {table_name}
+   VALUES ({column_data1}, {column_data2}, {column_data3}, .....), 
+   ({column_data1}, {column_data2}, {column_data3}, .....), 
+   ({column_data1}, {column_data2}, {column_data3}, .....), 
+    .....;
 
