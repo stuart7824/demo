@@ -1,5 +1,5 @@
 
-<h1> Syntax for Mysql <h1>
+ Syntax for Mysql 
 
 A> Syntax for Databases:-
 1. CREATE DATABASE {database_name};          
@@ -20,9 +20,8 @@ B> Syntax for Tables:-
 2. RENAME TABLE {old_name} TO {new_name};
 3. DROP TABLE {table_name};
 4. TRUNCATE TABLE {table_name};
-5. DELETE FROM TABLE {table_name};
-6. SHOW TABLE STATUS;
-7. DESCRIBE {table_name};
+5. SHOW TABLE STATUS;
+6. DESCRIBE {table_name};
 
 C> Syntax for Columns:-
 1. ALTER TABLE {table_name} 
@@ -30,7 +29,7 @@ C> Syntax for Columns:-
 2. ALTER TABLE {table_name} 
    DROP COLUMN {column_name};
 3. ALTER TABLE {table_name} 
-   MODIFY {column_name} {datatype};
+   MODIFY {column_name} {new_datatype};
 4. ALTER TABLE {table_name} 
    RENAME COLUMN {old_name} TO {new_name};
 5. ALTER TABLE {table_name}
@@ -44,24 +43,42 @@ D> Datatypes in MySQL:-
 Broadly speaking there are 3, string, numeric and data & time  
 
 E> Constraints:-
-1. CREATE TABLE table_name (
-    column1 datatype constraint,
-    column2 datatype constraint,
-    column3 datatype constraint,
+1. CREATE TABLE {table_name} (
+    {column_name1} {datatype} {constraint},
+    {column_name2} {datatype} {constraint},
+    {column_name3} {datatype} {constraint},
     ....);
-2. The following constraints are commonly used in SQL:
-NOT NULL - Ensures that a column cannot have a NULL value
+---> The following constraints are commonly used in SQL:
 UNIQUE - Ensures that all values in a column are different
-PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
-FOREIGN KEY - Prevents actions that would destroy links between tables
+2. ALTER TABLE {table_name}
+   ADD CONSTRAINT
+   UNIQUE({column_name});
+NOT NULL - Ensures that a column cannot have a NULL value
+3. ALTER TABLE {table_name}
+   MODIFY {column_name} {datatype} NOT NULL;
 CHECK - Ensures that the values in a column satisfies a specific condition
 DEFAULT - Sets a default value for a column if no value is specified
-CREATE INDEX - Used to create and retrieve data from the database very quickly
+5. ALTER TABLE {table_name}
+ALTER {column_name} SET DEFAULT {data}
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+6. ALTER TABLE {table_name}
+   ADD CONSTRAINT
+   PRIMARY KEY({column_name});
+FOREIGN KEY - Prevents actions that would destroy links between tables
+AUTO INCREMENT - Used to create and retrieve data from the database very quickly
 
 F> Inserting data into tables:-
-1. INSERT INTO {table_name}
+1. INSERT INTO (table_name}
+   VALUE ({column_data1}, {column_data2}, {column_data3}, .....), 
+2. INSERT INTO {table_name}
    VALUES ({column_data1}, {column_data2}, {column_data3}, .....), 
    ({column_data1}, {column_data2}, {column_data3}, .....), 
    ({column_data1}, {column_data2}, {column_data3}, .....), 
     .....;
+3. INSERT INTO {table_name} ({column_name1, column_name2)
+   VALUES ({column_data1}, {column_data2}, .....);
 
+G> Autocommit, commit & rollback
+1. SET AUTOCOMMIT = ON/OFF;
+2. COMMIT;
+3. ROLLBACK;
