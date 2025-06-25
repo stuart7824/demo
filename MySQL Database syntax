@@ -19,7 +19,7 @@ B> Syntax for Tables:-
   ...... );
 2. RENAME TABLE {old_name} TO {new_name};
 3. DROP TABLE {table_name};
-4. TRUNCATE TABLE {table_name};
+4. DELETE * FROM TABLE {table_name} or TRUNCATE TABLE {table_name};
 5. SHOW TABLE STATUS;
 6. DESCRIBE {table_name};
 
